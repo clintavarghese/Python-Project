@@ -1,0 +1,23 @@
+5-Create  a bar code. Yes, the same bar code we see on packages.  While it looks like magic, it's not. A zip code
+# has all numeric values. They are coded with line characters (|).  A 1 would be |, two would be ||, etc. If the
+# first two digits if a zip are 23, the first two positions of a bar code would look like this: || ||| Your job is to
+# take a zip code and convert it to a bar code. for this question it is not necessary to ask for user input. for
+# zero, just put a blank space
+'''
+I wrote a code for any number instead of just a zipcode
+'''
+print("\n********EXTRA CREDIT********\n")
+
+x = input('Enter any digit number:(only numericals)\n')
+barcode = []
+
+for i in range(len(x)):
+    k = int(x[i])
+    if k > 0:
+        barcode.append('|' * k)
+    else:
+        barcode.append(' ')
+
+print(barcode)
+barcodes=''.join(barcode)
+print(barcodes)
