@@ -1,0 +1,36 @@
+'''                                                                Assignment 1
+
+
+
+                                                                Clinta Puthussery Varghese
+'''
+
+from random import random
+
+# 1-write a for loop that starts at 1 and ends at 10.
+# print every other number (think of the third parameter in the range command)
+print("\nanswer to the question no: 1 is:\n")
+x = range(1, 10, 2)
+for i in x:
+    print(i)
+
+# 2-Write the same loop as above but start from 10 and go to 1, printing every number
+print("\nanswer to the question no: 2 is:\n")
+y = range(10, 0, -1)
+for i in y:
+    print(i)
+
+# 3-Write the same loop as #2 this time using a while loop
+print("\nanswer to the question no: 3 is:\n")
+x = 10
+while 0 < x:
+    print(x)
+    x = x - 1
+
+# 4-write a loop to print 10 random numbers
+print("\nanswer to the question no: 4 is:\n")
+import random
+
+for i in range(0, 10):
+    n = random.randint(1, 10)
+    print(n)
